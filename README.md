@@ -144,3 +144,30 @@ I've oversimplified a lot of the serverless portion here since it will vary base
 - [x] Integrate some means of alerting users who are unbanned
 - [x] Additional Actions such as "Deny Ban appeal".
 - [x] Optional Google Analytics tracking
+- [ ] 
+
+## Additional Recommendations
+## Suggestions for zkSync Discord Ban Appeal Bot
+
+1. **User-friendly Commands**: Implement clear and easy-to-use commands for ban appeal submission and status checks.
+
+2. **Appeal Form**: Create a structured appeal form to collect essential information like Discord username, ban reason, and supporting evidence.
+
+3. **Automated Responses**: Set up automatic responses to acknowledge receipt of ban appeals and provide estimated resolution timeframes.
+
+4. **Appeal Review Process**: Develop a workflow for moderators to review ban appeals with options to approve, deny, or request more info.
+
+5. **Appeal Status Updates**: Allow users to check their appeal status via a command or dedicated channel.
+
+6. **Notifications**: Send notifications to moderators for new appeals and status updates.
+
+7. **Logging and Tracking**: Implement logging to record all ban appeals and moderator actions.
+
+8. **Error Handling**: Ensure robust error handling for invalid inputs and unexpected issues.
+
+9. **Customization Options**: Provide configuration for server admins to customize bot behavior.
+
+10. **Documentation**: Write comprehensive documentation for users and moderators on bot usage and troubleshooting.
+
+These enhancements will improve the efficiency and user experience of the zkSync Discord ban appeal bot.
+
