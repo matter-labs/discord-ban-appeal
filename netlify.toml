@@ -8,31 +8,34 @@ AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
 [build.processing]
 html = { pretty_urls = true }
 images = { compress = true }
+# [[redirects]]
+# from = "/*"
+# to = "/index.html"
+# status = 200
 [[redirects]]
 from = "/*"
-to = "/index.html"
-status = 200
-
-
+to = "https://matterlabs.gitbook.io/zksync-community-hub/the-community/discord-best-practices"
+status = 301
+force = true
 
 [template.environment]
-REACT_APP_CLIENT_ID= "Your Discord Application Client ID"
-REACT_APP_CLIENT_SECRET= "Your Discord Application Client Secret"
-REACT_APP_DISCORD_BOT_TOKEN="Your Discord Application Bot Token"
-REACT_APP_GUILD_ID="The Guild ID you're running this page for"
-REACT_APP_JWT_SECRET="Generate a long password (you dont need to remember this)"
-REACT_APP_SKIP_BAN_CHECK="Allow non-banned members to submit an appeal? (true/false)"
-REACT_APP_BANNER_URL="The image URL you want to use for a custom banner (Optional)"
-REACT_APP_SITE_TITLE="SEO title you want to use for your website"
-REACT_APP_SITE_DESCRIPTION="SEO Description for your site"
-APPEALS_CHANNEL="The id of the channel where you want appeals to appear"
-REACT_APP_ENABLE_HCAPTCHA="Do you want to use hCaptcha? (true|false)"
-REACT_APP_HCAPTCHA_SITE_KEY="Site Key provided by hCaptcha"
-REACT_APP_HCAPTCHA_SECRET_KEY="Your hCaptcha profile secret"
-REACT_APP_GOOGLE_ANALYTICS_ID="Google Analytics Tracking ID like UA-000000-01."
-REACT_APP_ENABLE_SENDGRID="Sends users an email when they are unbanned (true/false)"
-SENDGRID_API_KEY="API Key for Sendgrid"
-SENDGRID_SENDER_EMAIL="Single Sender Verification Email"
-INVITE_URL="Discord invite that can be used in email template to unbanned users"
-GITHUB_PAT="Github Personal Access Token for Deny and Block to work"
+REACT_APP_CLIENT_ID = "Your Discord Application Client ID"
+REACT_APP_CLIENT_SECRET = "Your Discord Application Client Secret"
+REACT_APP_DISCORD_BOT_TOKEN = "Your Discord Application Bot Token"
+REACT_APP_GUILD_ID = "The Guild ID you're running this page for"
+REACT_APP_JWT_SECRET = "Generate a long password (you dont need to remember this)"
+REACT_APP_SKIP_BAN_CHECK = "Allow non-banned members to submit an appeal? (true/false)"
+REACT_APP_BANNER_URL = "The image URL you want to use for a custom banner (Optional)"
+REACT_APP_SITE_TITLE = "SEO title you want to use for your website"
+REACT_APP_SITE_DESCRIPTION = "SEO Description for your site"
+APPEALS_CHANNEL = "The id of the channel where you want appeals to appear"
+REACT_APP_ENABLE_HCAPTCHA = "Do you want to use hCaptcha? (true|false)"
+REACT_APP_HCAPTCHA_SITE_KEY = "Site Key provided by hCaptcha"
+REACT_APP_HCAPTCHA_SECRET_KEY = "Your hCaptcha profile secret"
+REACT_APP_GOOGLE_ANALYTICS_ID = "Google Analytics Tracking ID like UA-000000-01."
+REACT_APP_ENABLE_SENDGRID = "Sends users an email when they are unbanned (true/false)"
+SENDGRID_API_KEY = "API Key for Sendgrid"
+SENDGRID_SENDER_EMAIL = "Single Sender Verification Email"
+INVITE_URL = "Discord invite that can be used in email template to unbanned users"
+GITHUB_PAT = "Github Personal Access Token for Deny and Block to work"
 #End of file
